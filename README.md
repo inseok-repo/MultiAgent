@@ -47,7 +47,23 @@
 
 
 ## 정확도 향상에 들어간 스킬
-#### (SELF-RAG) Self-Reflective Retrieval-Augmented Generation
+#### SELF-RAG : Self-reflective Retrieval-Augmented Generation [link](https://arxiv.org/pdf/2310.11511)
+![image](https://github.com/user-attachments/assets/9daee482-72e6-4429-8109-75eb86e151be)
+
+#### 실제 구현 흐름
+
+기존 논문에는 가장 관련성이 높은 정보를 반복하여 찾고 최적의 응답을 찾음
+
+실제 구현은 관련된 문서가 하나라도 있다고 판단되면 전체 문서들에 대해 응답을 생성함
+
+- LangGraph흐름
+  1. 사용자 질의 유입 시 multi_agent노드 에서 마이데이터 문서 검색이 필요한지 판단
+     - 필요하다면 1차 검색 수행
+     - 필요하지 않다면 웹 검색을 참고하여 답변 생성 후 종료
+  2. retreve 노드에서 검색된 문서가 사용자 질의에 적합한지 판단
+     - 적합하다면 답변 생성 후 종료
+     - 적합하지 않다면 웹 검색을 참고하여 답변 생성 후 종료
+       
 ![langgraph 흐름](https://github.com/user-attachments/assets/3edc6433-219f-495d-894d-051f9e3ae54f)
 
 
