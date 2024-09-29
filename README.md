@@ -24,7 +24,8 @@
 - 백엔드 : ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 - 생성형 AI : ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 - Vector DB : [![GitHub Tutorials](https://img.shields.io/badge/Weaviate_Tutorials-green)](https://github.com/weaviate-tutorials/)
-- 활용 도구 : ![image](https://github.com/user-attachments/assets/a3b3f02b-81af-4992-85fc-9e8afdd8f556) ![image](https://github.com/user-attachments/assets/a68e61aa-b5c6-4f04-a76f-c522e850f8f3) ![image](https://github.com/user-attachments/assets/4ac0853d-42f2-40d6-a1a4-4b60ab0fc86a)
+- 활용 도구 : ![image](https://github.com/user-attachments/assets/4c6bfd37-de2d-41f3-8964-bd703a23b47f)
+ ![image](https://github.com/user-attachments/assets/a68e61aa-b5c6-4f04-a76f-c522e850f8f3) ![image](https://github.com/user-attachments/assets/4ac0853d-42f2-40d6-a1a4-4b60ab0fc86a)
 
 
 
