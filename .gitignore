@@ -1,0 +1,27 @@
+
+#files
+*.env
+*.ipynb
+pawns-cli*
+pawns-cli
+*.log
+*.tar
+*.png
+
+#folders
+__pycache__/
+*__pycache__/*
+.venv/
+.Trash-0/
+backup/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*/old_py/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+
