@@ -15,7 +15,7 @@ if "session_id" not in st.session_state:
 
 st.write(f"uuid: {st.session_state['session_id']}")
 
-API_URL = "http://172.17.0.3:8001/api/workflow"
+API_URL = os.getenv("BACKEND_URL")
 
 st.title("'Multi Agent for MY DATA'")
 
