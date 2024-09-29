@@ -34,12 +34,19 @@
 
 
 ## 전체 아키텍처
-
+#### 설계 요소
+- 인프라 확장 가능 : 클라우드 및 도커 컨테이너 기반으로 구축
+- 비동기 통신 처리 : FastAPI 기반으로 구축
+- 처리 속도 & 메모리 관리 : 필요할 때만 객체를 생성하고, 이미 생성된 객체는 캐싱을 통해 빠르게 재사용
+- 고성능 벡터스토어 사용 : Weaviate를 별도 컨테이너로 구축하여 수평적 확장 가능
+- 멀티에이전트 구축 : 사용자의 질의 내용에 따라 에이전트가 판단하여 가장 적합한 답변 생성
+- 텍스트/표/이미지 다양한 서식이 포함된 PDF 문서 답변 가능
 ![image](https://github.com/user-attachments/assets/d7353f71-d717-4dad-96b4-aa54fafb688b)
 
 
 
-## LangGraph
+## 정확도 향상에 들어간 스킬
+#### (SELF-RAG) Self-Reflective Retrieval-Augmented Generation
 ![langgraph 흐름](https://github.com/user-attachments/assets/3edc6433-219f-495d-894d-051f9e3ae54f)
 
-## 참고 인사이트
+
