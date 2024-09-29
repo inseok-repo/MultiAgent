@@ -12,11 +12,11 @@
 
 [[**마데 멀티 에이전트 사용해보기**](http://35.209.240.229:8501/)]
 
-## 프로젝트 데모
+## 1. 프로젝트 데모
 ![마데봇](https://github.com/user-attachments/assets/99af1abc-39f0-452f-9afa-ed5a8dd1770f)
 
 
-## 활용도구
+## 2. 활용도구
 
 - 사용 언어 : ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 - 구축 인프라 : ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) /  ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -33,7 +33,7 @@
 
 
 
-## 전체 아키텍처
+## 3. 전체 아키텍처
 #### 설계 요소
 - 인프라 확장 가능 : 클라우드 및 도커 컨테이너 기반으로 구축
 - 비동기 통신 처리 : FastAPI 기반으로 구축
@@ -42,11 +42,12 @@
 - 멀티에이전트 구축 : 사용자의 질의 내용에 따라 에이전트가 판단하여 가장 적합한 답변 생성 (LangGraph)
 - 텍스트/표/이미지 다양한 서식이 포함된 PDF 문서 답변 가능
   
-![image](https://github.com/user-attachments/assets/d7353f71-d717-4dad-96b4-aa54fafb688b)
+![image](https://github.com/user-attachments/assets/5d525816-1237-41f3-9666-a5a7aa514d8f)
 
 
 
-## 정확도 향상에 들어간 스킬
+
+## 4. 정확도 향상에 들어간 스킬
 #### SELF-RAG : Self-reflective Retrieval-Augmented Generation [link](https://arxiv.org/pdf/2310.11511)
 ![image](https://github.com/user-attachments/assets/9daee482-72e6-4429-8109-75eb86e151be)
 
@@ -58,15 +59,15 @@
 
 - LangGraph흐름
   1. 사용자 질의 유입 시 multi_agent노드 에서 마이데이터 문서 검색이 필요한지 판단
-     - 필요하다면 1차 검색 수행
-     - 필요하지 않다면 웹 검색을 참고하여 답변 생성 후 종료
+     - 필요시 1차 검색 수행
+     - 불필요시 않다면 웹 검색을 참고하여 답변 생성 후 종료
   2. retreve 노드에서 검색된 문서가 사용자 질의에 적합한지 판단
-     - 적합하다면 답변 생성 후 종료
-     - 적합하지 않다면 웹 검색을 참고하여 답변 생성 후 종료
+     - 적합 판정시 답변 생성 후 종료
+     - 부적합 판정시 웹 검색을 참고하여 답변 생성 후 종료
        
 ![langgraph 흐름](https://github.com/user-attachments/assets/3edc6433-219f-495d-894d-051f9e3ae54f)
 
-## 결과 예시 (에이전트 답변)
+## 5. 결과 예시 (에이전트 답변)
 
 - 유형 종류
   - TYPE1 : 마이데이터 가이드 문서 관련 질문
@@ -75,15 +76,19 @@
   - TYPE4 : 마이데이터 유사 질문
 
 #### **Type1**
+멀티에이전트 -> 가이드 PDF문서 참조하여 답변
 ![image](https://github.com/user-attachments/assets/e8efca6b-2e99-472d-ba27-282fe859832a)
 
 #### **Type2**
+멀티에이전트 -> API PDF문서 참조하여 답변
 ![image](https://github.com/user-attachments/assets/5859ae4f-4845-4aac-bc0a-c4ede7f62f9f)
 
 #### **Type3**
+멀티에이전트 -> 검색도구 활용하여 답변
 ![image](https://github.com/user-attachments/assets/c45e97b2-b1e1-49ad-be62-06f242598555)
 
 #### **Type4**
+멀티에이전트 -> 가이드 PDF문서 확인 -> API PDF문서 확인 -> 검색 도구 활용하여 최종 답변
 ![image](https://github.com/user-attachments/assets/b3416df7-c73e-436f-8b5a-60c542c8c22a)
 
 
