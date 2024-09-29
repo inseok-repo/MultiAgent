@@ -66,4 +66,27 @@
        
 ![langgraph 흐름](https://github.com/user-attachments/assets/3edc6433-219f-495d-894d-051f9e3ae54f)
 
+## 결과 예시 (에이전트 답변)
+
+- 유형 종류
+  - TYPE1 : 마이데이터 가이드 문서 관련 질문
+  - TYPE2 : 마이데이터 API 문서 관련 질문
+  - TYPE3 : 마이데이터와 무관한 질문
+  - TYPE4 : 마이데이터 유사 질문
+
+#### **Type1**
+![image](https://github.com/user-attachments/assets/e8efca6b-2e99-472d-ba27-282fe859832a)
+
+#### **Type2**
+![image](https://github.com/user-attachments/assets/5859ae4f-4845-4aac-bc0a-c4ede7f62f9f)
+
+#### **Type3**
+![image](https://github.com/user-attachments/assets/c45e97b2-b1e1-49ad-be62-06f242598555)
+
+#### **Type4**
+![image](https://github.com/user-attachments/assets/b3416df7-c73e-436f-8b5a-60c542c8c22a)
+
+
+
+
 
