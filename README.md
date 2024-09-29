@@ -24,6 +24,8 @@
 - 백엔드 : ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 - 생성형 AI : ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 - Vector DB : [![GitHub Tutorials](https://img.shields.io/badge/Weaviate_Tutorials-green)](https://github.com/weaviate-tutorials/)
+- 활용 도구 : ![image](https://github.com/user-attachments/assets/bb7223e2-59dc-4cd0-b944-88028df193c7)
+
 
 
 
