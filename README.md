@@ -35,6 +35,8 @@
 
 ## 전체 아키텍처
 
+![image](https://github.com/user-attachments/assets/d7353f71-d717-4dad-96b4-aa54fafb688b)
+
 
 
 ## LangGraph
