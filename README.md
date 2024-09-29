@@ -11,7 +11,9 @@
 #### Try it !!
 
 [[**마데 멀티 에이전트 사용해보기**](http://35.209.240.229:8501/)]
-![Uploading 마데봇.gif…]()
+
+## 프로젝트 데모
+![마데봇](https://github.com/user-attachments/assets/99af1abc-39f0-452f-9afa-ed5a8dd1770f)
 
 
 ## 활용도구
