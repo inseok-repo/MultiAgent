@@ -28,11 +28,6 @@
  ![image](https://github.com/user-attachments/assets/a68e61aa-b5c6-4f04-a76f-c522e850f8f3) ![image](https://github.com/user-attachments/assets/4ac0853d-42f2-40d6-a1a4-4b60ab0fc86a)
 
 
-
-
-
-
-
 ## 3. 전체 아키텍처
 #### 설계 요소
 - 인프라 확장 가능 : 클라우드 및 도커 컨테이너 기반으로 구축
@@ -43,9 +38,6 @@
 - 텍스트/표/이미지 다양한 서식이 포함된 PDF 문서 답변 가능
   
 ![image](https://github.com/user-attachments/assets/5d525816-1237-41f3-9666-a5a7aa514d8f)
-
-
-
 
 ## 4. 정확도 향상에 들어간 스킬
 #### SELF-RAG : Self-reflective Retrieval-Augmented Generation [link](https://arxiv.org/pdf/2310.11511)
@@ -67,29 +59,45 @@
        
 ![langgraph 흐름](https://github.com/user-attachments/assets/3edc6433-219f-495d-894d-051f9e3ae54f)
 
-## 5. 결과 예시 (에이전트 답변)
+## 5. 질문 예시
+- 가이드 문서 관련
+  - 토큰이 중복 발급되었을 경우 어떻게 되나요?
+  - 정보 전송 요구 연장은 언제 가능한가요?
+  - 마이데이터서비스 등록 준비
+  - 마이데이터 사업자의 개인정보 전송요구 철회 시나리오는?
+- API 관련
+  - 리볼빙 정보 조회 응답 body 알려줘
+  - timestamp를 이용한 부하개선을 예시를 들어 설명해줘
+  - 카드 목록 조회 API는 어떤것들이 있나요?
+  - 만기일시상환 코드는? 
+- 그 외
+  - 안녕하세요?
+  - 오늘 서울 날씨는?
+  - 2024년 상반기 삼성전자 매출은?
 
-- 유형 종류
+## 6. 결과 예시 (Question - Answer Set)
+- 질의 유형 종류
   - TYPE1 : 마이데이터 가이드 문서 관련 질문
   - TYPE2 : 마이데이터 API 문서 관련 질문
   - TYPE3 : 마이데이터와 무관한 질문
   - TYPE4 : 마이데이터 유사 질문
 
 #### **Type1**
-멀티에이전트 -> 가이드 PDF문서 참조하여 답변
+멀티에이전트 -> 가이드 PDF문서 참조하여 답변<br>
 ![image](https://github.com/user-attachments/assets/e8efca6b-2e99-472d-ba27-282fe859832a)
 
 #### **Type2**
-멀티에이전트 -> API PDF문서 참조하여 답변
+멀티에이전트 -> API PDF문서 참조하여 답변<br>
 ![image](https://github.com/user-attachments/assets/5859ae4f-4845-4aac-bc0a-c4ede7f62f9f)
 
 #### **Type3**
-멀티에이전트 -> 검색도구 활용하여 답변
+멀티에이전트 -> 검색도구 활용하여 답변<br>
 ![image](https://github.com/user-attachments/assets/c45e97b2-b1e1-49ad-be62-06f242598555)
 
 #### **Type4**
-멀티에이전트 -> 가이드 PDF문서 확인 -> API PDF문서 확인 -> 검색 도구 활용하여 최종 답변
-![image](https://github.com/user-attachments/assets/b3416df7-c73e-436f-8b5a-60c542c8c22a)
+멀티에이전트 -> 가이드 PDF문서 확인 -> API PDF문서 확인 -> 검색 도구 활용하여 최종 답변<br>
+![image](https://github.com/user-attachments/assets/ad5de5d3-f25a-4361-8860-eac70dd18dbf)
+
 
 
 
